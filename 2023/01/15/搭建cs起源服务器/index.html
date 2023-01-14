@@ -20,30 +20,32 @@
     var CONFIG = {"hostname":"q7df1.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="纪录学习分享生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shen的博客">
-<meta property="og:url" content="https://q7df1.github.io/index.html">
+  <meta name="description" content="欢迎来学习搭建cs起源，搭建cs服务器主要分为三部分： 1、服务器选择 2、steamcmd安装 3、登录steamcmd并cs起源部署启动 注意：在这里，我默认了你有Linux基础，能够看懂并处理一些问题 搭建cs起源服务器一、选择一款合适的轻量级服务器。我选择的是国内轻量级云服务器，各大商家其实卖的都不贵，大家可以去多对比，选择折扣力度最大的，也可以先找个免费的试试水。一定要选择国内的服务器，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建cs起源服务器">
+<meta property="og:url" content="https://q7df1.github.io/2023/01/15/%E6%90%AD%E5%BB%BAcs%E8%B5%B7%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="Shen的博客">
-<meta property="og:description" content="纪录学习分享生活">
+<meta property="og:description" content="欢迎来学习搭建cs起源，搭建cs服务器主要分为三部分： 1、服务器选择 2、steamcmd安装 3、登录steamcmd并cs起源部署启动 注意：在这里，我默认了你有Linux基础，能够看懂并处理一些问题 搭建cs起源服务器一、选择一款合适的轻量级服务器。我选择的是国内轻量级云服务器，各大商家其实卖的都不贵，大家可以去多对比，选择折扣力度最大的，也可以先找个免费的试试水。一定要选择国内的服务器，">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-01-14T16:13:59.000Z">
+<meta property="article:modified_time" content="2023-01-14T16:15:20.267Z">
 <meta property="article:author" content="SH EN">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://q7df1.github.io/">
+<link rel="canonical" href="https://q7df1.github.io/2023/01/15/%E6%90%AD%E5%BB%BAcs%E8%B5%B7%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Shen的博客</title>
+  <title>搭建cs起源服务器 | Shen的博客</title>
   
 
 
@@ -141,9 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -159,10 +162,9 @@
       <meta itemprop="name" content="Shen的博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/01/15/%E6%90%AD%E5%BB%BAcs%E8%B5%B7%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-title-link" itemprop="url">搭建cs起源服务器</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          搭建cs起源服务器
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -186,7 +188,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>欢迎来学习搭建cs起源，搭建cs服务器主要分为三部分：</p>
+        <p>欢迎来学习搭建cs起源，搭建cs服务器主要分为三部分：</p>
 <p>1、服务器选择</p>
 <p>2、steamcmd安装</p>
 <p>3、登录steamcmd并cs起源部署启动</p>
@@ -271,91 +273,30 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">connect 你的ip:端口号</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://q7df1.github.io/2023/01/14/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="SH EN">
-      <meta itemprop="description" content="纪录学习分享生活">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Shen的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/01/14/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-01-14 21:07:31" itemprop="dateCreated datePublished" datetime="2023-01-14T21:07:31+08:00">2023-01-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/01/14/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -408,6 +349,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%AD%E5%BB%BAcs%E8%B5%B7%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">搭建cs起源服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%80%89%E6%8B%A9%E4%B8%80%E6%AC%BE%E5%90%88%E9%80%82%E7%9A%84%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%82"><span class="nav-number">1.1.</span> <span class="nav-text">一、选择一款合适的轻量级服务器。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9%EF%BC%9ACentos%E6%88%96Ubuntu%E6%88%96Debian"><span class="nav-number">1.1.1.</span> <span class="nav-text">操作系统选择：Centos或Ubuntu或Debian</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%99%BB%E5%BD%95%E6%96%B9%E5%BC%8F%EF%BC%9A%E6%88%91%E9%80%89%E6%8B%A9%E7%9A%84xshell%E8%BF%99%E6%AC%BE%E5%B7%A5%E5%85%B7%EF%BC%8C%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7%E4%B8%80%E6%A0%B7"><span class="nav-number">1.1.2.</span> <span class="nav-text">登录方式：我选择的xshell这款工具，其他工具一样</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3%EF%BC%9A%E4%B8%80%E5%AE%9A%E8%A6%81%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8E%82%E5%95%86%E9%82%A3-gt-%E6%8E%A7%E5%88%B6%E5%8F%B0-gt-%E9%98%B2%E7%81%AB%E5%A2%99-gt-%E6%B7%BB%E5%8A%A0%E8%A7%84%E5%88%99%EF%BC%8C%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3%EF%BC%8C%E9%BB%98%E8%AE%A427015%EF%BC%88TCP%E5%92%8CUDP%E9%83%BD%E5%BC%80%E6%94%BE%EF%BC%89"><span class="nav-number">1.1.3.</span> <span class="nav-text">开放端口：一定要在服务器厂商那-&gt;控制台-&gt;防火墙-&gt;添加规则，开放端口，默认27015（TCP和UDP都开放）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81steamcmd%E5%AE%89%E8%A3%85"><span class="nav-number">1.2.</span> <span class="nav-text">二、steamcmd安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Centos%E5%AE%89%E8%A3%85%EF%BC%9A"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">Centos安装：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%EF%BC%9A%E8%8B%A5%E4%BD%A0%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%8D%E6%98%AF64%E4%BD%8D%EF%BC%8C%E9%82%A3%E5%8F%AA%E9%9C%80%E8%A6%81%E6%89%A7%E8%A1%8C%E4%B8%8A%E9%9D%A2%E8%BF%99%E6%9D%A1"><span class="nav-number">1.2.0.1.1.</span> <span class="nav-text">安装环境：若你的操作系统不是64位，那只需要执行上面这条</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%89%E8%A3%85screen%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.0.1.2.</span> <span class="nav-text">安装screen管理工具</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Ubuntu-x2F-Debain%E5%AE%89%E8%A3%85"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">Ubuntu&#x2F;Debain安装:</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85"><span class="nav-number">1.2.0.2.1.</span> <span class="nav-text">环境安装</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%89%E8%A3%85screen%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7-1"><span class="nav-number">1.2.0.2.2.</span> <span class="nav-text">安装screen管理工具</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%99%BB%E5%BD%95steamcmd%E5%B9%B6cs%E8%B5%B7%E6%BA%90%E9%83%A8%E7%BD%B2%E5%90%AF%E5%8A%A8"><span class="nav-number">1.3.</span> <span class="nav-text">三、登录steamcmd并cs起源部署启动</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E8%B7%AF%E5%BE%84"><span class="nav-number">1.3.1.</span> <span class="nav-text">选择路径:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%99%BB%E5%BD%95SteamCMD%EF%BC%9A"><span class="nav-number">1.3.2.</span> <span class="nav-text">登录SteamCMD：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BDcs%E8%B5%B7%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9A"><span class="nav-number">1.3.3.</span> <span class="nav-text">下载cs起源服务器：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9A"><span class="nav-number">1.3.4.</span> <span class="nav-text">配置文件：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%80%E5%90%8E%E5%B0%B1%E6%98%AF%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">1.3.5.</span> <span class="nav-text">最后就是启动服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%80%E5%90%8E%EF%BC%8C%E8%BF%9E%E6%8E%A5%EF%BC%9A"><span class="nav-number">1.3.6.</span> <span class="nav-text">最后，连接：</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
