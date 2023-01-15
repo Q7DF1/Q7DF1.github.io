@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"q7df1.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"q7df1.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="纪录学习分享生活">
@@ -74,6 +74,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="Shen的博客" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -134,6 +135,9 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/Q7DF1" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
 
     <main class="main">
@@ -150,7 +154,7 @@
     <link itemprop="mainEntityOfPage" href="https://q7df1.github.io/2023/01/15/%E6%90%AD%E5%BB%BAcs%E8%B5%B7%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/android-chrome-192x192.png">
       <meta itemprop="name" content="SH EN">
       <meta itemprop="description" content="纪录学习分享生活">
     </span>
@@ -172,7 +176,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-01-15 00:13:59 / Modified: 00:15:20" itemprop="dateCreated datePublished" datetime="2023-01-15T00:13:59+08:00">2023-01-15</time>
+              <time title="Created: 2023-01-15 00:13:59 / Modified: 20:35:45" itemprop="dateCreated datePublished" datetime="2023-01-15T00:13:59+08:00">2023-01-15</time>
             </span>
 
           
@@ -189,9 +193,9 @@
           <p>欢迎来学习搭建cs起源，搭建cs服务器主要分为三部分：</p>
 <p>1、服务器选择</p>
 <p>2、steamcmd安装</p>
-<p>3、登录steamcmd并cs起源部署启动</p>
+<p>3、登录并安装CS起源服务器</p>
 <p>注意：在这里，我默认了你有Linux基础，能够看懂并处理一些问题</p>
-<h2 id="搭建cs起源服务器"><a href="#搭建cs起源服务器" class="headerlink" title="搭建cs起源服务器"></a>搭建cs起源服务器</h2><h3 id="一、选择一款合适的轻量级服务器。"><a href="#一、选择一款合适的轻量级服务器。" class="headerlink" title="一、选择一款合适的轻量级服务器。"></a>一、选择一款合适的轻量级服务器。</h3><p>我选择的是国内轻量级云服务器，各大商家其实卖的都不贵，大家可以去多对比，选择折扣力度最大的，也可以先找个免费的试试水。一定要选择国内的服务器，毕竟作为游戏服务器延迟太高懂得都懂，除非你在国外，那选择你自己所在区域就好了。</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="一、选择一款合适的轻量级服务器。"><a href="#一、选择一款合适的轻量级服务器。" class="headerlink" title="一、选择一款合适的轻量级服务器。"></a>一、选择一款合适的轻量级服务器。</h3><p>我选择的是国内轻量级云服务器，各大商家其实卖的都不贵，大家可以去多对比，选择折扣力度最大的，也可以先找个免费的试试水。一定要选择国内的服务器，毕竟作为游戏服务器延迟太高懂得都懂，除非你在国外，那选择你自己所在区域就好了。</p>
 <h4 id="操作系统选择：Centos或Ubuntu或Debian"><a href="#操作系统选择：Centos或Ubuntu或Debian" class="headerlink" title="操作系统选择：Centos或Ubuntu或Debian"></a>操作系统选择：Centos或Ubuntu或Debian</h4><p>这些都可以，区别有一点点但是不大这里我选择的是Centos7.6然后Ubuntu和Debian因为同根所以方法也是相同的</p>
 <p>当然也可以用docker安装，而且更加方便有兴趣的小伙伴，我会将官网地址贴在最后面</p>
 <h4 id="登录方式：我选择的xshell这款工具，其他工具一样"><a href="#登录方式：我选择的xshell这款工具，其他工具一样" class="headerlink" title="登录方式：我选择的xshell这款工具，其他工具一样"></a>登录方式：我选择的xshell这款工具，其他工具一样</h4><h4 id="开放端口：一定要在服务器厂商那-gt-控制台-gt-防火墙-gt-添加规则，开放端口，默认27015（TCP和UDP都开放）"><a href="#开放端口：一定要在服务器厂商那-gt-控制台-gt-防火墙-gt-添加规则，开放端口，默认27015（TCP和UDP都开放）" class="headerlink" title="开放端口：一定要在服务器厂商那-&gt;控制台-&gt;防火墙-&gt;添加规则，开放端口，默认27015（TCP和UDP都开放）"></a>开放端口：一定要在服务器厂商那-&gt;控制台-&gt;防火墙-&gt;添加规则，开放端口，默认27015（TCP和UDP都开放）</h4><h3 id="二、steamcmd安装"><a href="#二、steamcmd安装" class="headerlink" title="二、steamcmd安装"></a>二、steamcmd安装</h3><p>首先连接到Linux系统后首先创建个steam用户</p>
@@ -202,7 +206,7 @@
 
 <p>以上步骤各个Linux操作系统相同</p>
 <p>接下来我会分操作系统打印命令</p>
-<h5 id="Centos安装："><a href="#Centos安装：" class="headerlink" title="Centos安装："></a>Centos安装：</h5><h6 id="安装环境：若你的操作系统不是64位，那只需要执行上面这条"><a href="#安装环境：若你的操作系统不是64位，那只需要执行上面这条" class="headerlink" title="安装环境：若你的操作系统不是64位，那只需要执行上面这条"></a>安装环境：若你的操作系统不是64位，那只需要执行上面这条</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install glibc libstdc++</span><br></pre></td></tr></table></figure>
+<h4 id="Centos安装："><a href="#Centos安装：" class="headerlink" title="Centos安装："></a>Centos安装：</h4><h6 id="安装环境：若你的操作系统不是64位，那只需要执行上面这条"><a href="#安装环境：若你的操作系统不是64位，那只需要执行上面这条" class="headerlink" title="安装环境：若你的操作系统不是64位，那只需要执行上面这条"></a>安装环境：若你的操作系统不是64位，那只需要执行上面这条</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install glibc libstdc++</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install glibc.i686 libstdc++.i686</span><br></pre></td></tr></table></figure>
 
@@ -210,7 +214,7 @@
 
 
 
-<h5 id="Ubuntu-x2F-Debain安装"><a href="#Ubuntu-x2F-Debain安装" class="headerlink" title="Ubuntu&#x2F;Debain安装:"></a>Ubuntu&#x2F;Debain安装:</h5><h6 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h6><p>注意：root用户不用加sudo</p>
+<h4 id="Ubuntu-x2F-Debain安装"><a href="#Ubuntu-x2F-Debain安装" class="headerlink" title="Ubuntu&#x2F;Debain安装:"></a>Ubuntu&#x2F;Debain安装:</h4><h6 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h6><p>注意：root用户不用加sudo</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install lib32gcc1</span><br></pre></td></tr></table></figure>
 
 <h6 id="安装screen管理工具-1"><a href="#安装screen管理工具-1" class="headerlink" title="安装screen管理工具"></a>安装screen管理工具</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install screen</span><br></pre></td></tr></table></figure>
@@ -233,7 +237,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./steamcmd.sh</span><br></pre></td></tr></table></figure>
 
 <p>吐槽一句:第一次加载可能有点慢，看运气，如果下载实在很慢的话可以ctrl＋c退出，然后将整个Steam文件夹干掉（删除）然后会到前面创建Steam文件那重来就好</p>
-<h3 id="三、登录steamcmd并cs起源部署启动"><a href="#三、登录steamcmd并cs起源部署启动" class="headerlink" title="三、登录steamcmd并cs起源部署启动"></a>三、登录steamcmd并cs起源部署启动</h3><p>如果出现Steam&gt;这个就证明你成功安装了，接下来在这个界面我们要登录，并安装cs起源</p>
+<h3 id="三、登录steamcmd并安装CS起源"><a href="#三、登录steamcmd并安装CS起源" class="headerlink" title="三、登录steamcmd并安装CS起源"></a>三、登录steamcmd并安装CS起源</h3><p>如果出现Steam&gt;这个就证明你成功安装了，接下来在这个界面我们要登录，并安装cs起源</p>
 <p>注意：在Steam&gt;里面不小心输入错了也删不了的话，没关系，回车一下再重新输入就好</p>
 <h4 id="选择路径"><a href="#选择路径" class="headerlink" title="选择路径:"></a>选择路径:</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">force_install_dir ./cs_source/</span><br></pre></td></tr></table></figure>
 
@@ -250,7 +254,7 @@
 <p>接下来需要稍稍配置一下就好了,将一下内容复制粘贴到一个文本文件内容，然后重命名为<code>server.cfg</code>上传到目录<code>/home/steam/Steam/cs_source/cstrike/cfg</code>中，当然这是我的目录，如果你前面有更改的话会不同，但核心就是将文件放入cstrike下面的cfg文件中</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">hostname &quot;全CS区最靓的服务器&quot;                   //服务器的名称</span><br><span class="line">Rcon_password &quot;&quot;			// 远程控制密码, 没设即不需要密码</span><br><span class="line">sv_password &quot;&quot;					// 进入服务器所需的密码设定, 没设即不需要密码</span><br><span class="line">sv_region &quot;4&quot;					// 设定服务器的所在区域, 4 为亚洲</span><br><span class="line">sv_allowdownload &quot;1&quot;				// 允许下载档案 (如: 新地图)</span><br><span class="line">sv_allowupload &quot;1&quot;				// 允许上传档案</span><br><span class="line">sv_alltalk &quot;0&quot;					// 公麦 (0/1 - 关/开)</span><br><span class="line">sv_cheats &quot;0&quot;					//这个不能打开</span><br><span class="line">tv_enable &quot;1&quot;					// 开启 Source TV (0/1 - 关/开)</span><br><span class="line">sv_downloadurl &quot;http://css.xxx.com/&quot;	//设置地图下载，域名需要绑定在 cstrike 目录上，否则将无法下载地图，可以把地图压缩城.b2z格式提高下载速度</span><br><span class="line">sv_gravity &quot;800&quot;				// 地心引力设定值, 预设 800 重力</span><br><span class="line">sv_voiceenable &quot;1&quot;				// 是否允许玩家使用 mic (0/1 - 关/开)</span><br><span class="line">sv_rcon_maxfailures &quot;2&quot;				//试图取得治理员权限失败凌驾几次，CDKEY即被BAN</span><br><span class="line">sv_maxrate &quot;0&quot;				//限制网络传输的资料最大值</span><br><span class="line">sv_minrate &quot;0&quot;				//限制网络传输的资料最小值</span><br><span class="line">sv_maxupdaterate &quot;66&quot;				//服务器发送至客户端的最大每秒更新次数</span><br><span class="line">sv_minupdaterate &quot;66&quot;				//服务器发送至客户端的最小每秒更新次数</span><br><span class="line">mp_playerid &quot;0&quot;					// 是否显示敌人及队友名字, 1:不显示敌人 2:皆不显示</span><br><span class="line">mp_flashlight &quot;1&quot;				// 是否允许手电筒 (0/1 - 关/开)</span><br><span class="line">mp_timelimit &quot;0&quot;				//多少时间后换地图</span><br><span class="line">mp_maxrounds &quot;0&quot;				//多少回合后换地图4</span><br><span class="line">mp_allowspectators &quot;1&quot;				// 是否允许观察者 (0/1 - 关/开) </span><br><span class="line">mp_footsteps &quot;1&quot;				// 是否允许脚步声 (0/1 - 关/开)</span><br><span class="line">mp_falldamage &quot;1&quot;				// 高处落下杀伤</span><br><span class="line">mp_autokick &quot;0&quot;					// 是否将闲置及TKer自动踢出服务器 (0/1 - 关/开)</span><br><span class="line">mp_startmoney &quot;16000&quot;				//开局金钱设置</span><br><span class="line">mp_winlimit &quot;0&quot;					//任意一队杀多少回合后换地图</span><br><span class="line">mp_fraglimit &quot;0&quot;　				// 某玩家获得多少 frag 后换地图 (0 无限制) </span><br><span class="line">mp_freezetime &quot;0&quot;				// 回合开始前的冻结时间 (单位: 秒, 0 为无冻结时间) </span><br><span class="line">mp_buytime &quot;0.25&quot;				//设置购买武器的时间（单位秒）</span><br><span class="line">mp_forcecamera &quot;0&quot;				// 玩家死后是否只能看到同队画面 (0/1 - 关/开) </span><br><span class="line">mp_fadetoblack &quot;0&quot;				// 玩家死后画面是否为黑幕 (0/1 - 关/开) </span><br><span class="line">mp_friendlyfire &quot;0&quot;				//设定会不会杀伤队友。1是会，0是关闭</span><br><span class="line">mp_autoteambalance &quot;1&quot;　　　　　		// 是否启动自动队伍平衡功能 (0/1 - 关/开) </span><br><span class="line">mp_limitteams &quot;1&quot;　　　　　　 　		// 队伍人数最大可相差几人 </span><br><span class="line">mp_roundtime &quot;3&quot;				// 回合时间 (单位: 分钟) </span><br><span class="line">log &quot;0&quot;						//设定是否启用日志 0 不启用 1启用</span><br><span class="line">mp_logdetail &quot;0&quot;				// 是否启用详细 log 功能 (0/1 - 关/开</span><br><span class="line">mp_tkpunish &quot;0&quot;					// 是否开启 TK 惩罚 (0/1 - 关/开) </span><br><span class="line">mp_c4timer &quot;35&quot;					//C4炸弹引爆时间</span><br><span class="line">sv_airaccelerate &quot;5&quot;				//空中停留时间 (默认 10)</span><br><span class="line">sv_enablebunnyhopping &quot;0&quot;			//是否开启连跳相关</span><br></pre></td></tr></table></figure>
 
-<h4 id="最后就是启动服务器"><a href="#最后就是启动服务器" class="headerlink" title="最后就是启动服务器"></a>最后就是启动服务器</h4><p>进入目录</p>
+<h4 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h4><p>进入目录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/home/steam/Steam/cs_source</span><br></pre></td></tr></table></figure>
 
 <p>创建一个启动脚本（如果报错显示没有vim可以用vi代替）</p>
@@ -259,16 +263,18 @@
 <p>输入i进入插入模式并粘贴脚本</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Starting CS:Source Server&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1</span><br><span class="line">screen -A -dm -S css-server ./srcds_run -console -game cstrike -tickrate 66 -pingboost 3  +sv_lan 0 -port 27015 +map de_inferno +maxplayers 10</span><br><span class="line">screen -x css-server</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>可以更改脚本内容，我这里是最大十个玩家，然后地图是小镇</p>
+<p>可以更改脚本内容，我这里是最大十个玩家，然后地图是小镇，你可以修改成自己想要比如de_dust_2</p>
 <p>启动后键盘Ctrl a +d，这样我们就可以安心退出，程序会执行下去</p>
 <p>可以通过screen -ls 命令查看会话窗口</p>
 <p>也可以用<code>ps -u</code>查看进程，关闭的话用<code>kill PID</code></p>
-<h4 id="最后，连接："><a href="#最后，连接：" class="headerlink" title="最后，连接："></a>最后，连接：</h4><p>进入cs起源后<code>~</code>键打开控制台</p>
+<h4 id="连接服务器："><a href="#连接服务器：" class="headerlink" title="连接服务器："></a>连接服务器：</h4><p>进入cs起源后<code>~</code>键打开控制台</p>
 <p>输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">connect 你的ip</span><br></pre></td></tr></table></figure>
 
 <p>改端口了的话要加端口号</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">connect 你的ip:端口号</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档:"></a>参考文档:</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developer.valvesoftware.com/wiki/SteamCMD:zh-cn</span><br></pre></td></tr></table></figure>
 
 
       
@@ -292,7 +298,7 @@
     <link itemprop="mainEntityOfPage" href="https://q7df1.github.io/2023/01/14/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/android-chrome-192x192.png">
       <meta itemprop="name" content="SH EN">
       <meta itemprop="description" content="纪录学习分享生活">
     </span>
@@ -413,6 +419,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SH EN"
+      src="/images/android-chrome-192x192.png">
   <p class="site-author-name" itemprop="name">SH EN</p>
   <div class="site-description" itemprop="description">纪录学习分享生活</div>
 </div>
@@ -424,6 +432,10 @@
           <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
@@ -473,6 +485,7 @@
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -504,6 +517,8 @@
 
 
 
+
+  
 
   
 
