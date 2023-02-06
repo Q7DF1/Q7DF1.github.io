@@ -151,6 +151,72 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://q7df1.github.io/2023/02/06/%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%80%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/android-chrome-192x192.png">
+      <meta itemprop="name" content="SH EN">
+      <meta itemprop="description" content="纪录学习分享生活">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shen的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/06/%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%80%81/" class="post-title-link" itemprop="url">接口实现多态</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-02-06 14:59:36 / Modified: 15:19:18" itemprop="dateCreated datePublished" datetime="2023-02-06T14:59:36+08:00">2023-02-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>接口使得程序更具有灵活性和拓展性的主要原因是它实现了多态性。多态性指的是不同的类型可以实现相同的接口，并可以通过接口类型访问这些实现。</p>
+<p>通过实现接口，不同的类型可以共享相同的行为，使得程序变得更加灵活和可拓展。例如，您可以定义一个绘制图形的接口，并且所有图形类型（如矩形、圆形、三角形等）都可以实现该接口。这使得您可以在不知道具体图形类型的情况下使用这些图形。</p>
+<p>另外，接口还允许您在不修改已有代码的情况下添加新的功能。例如，您可以添加一个新的类型，它实现了接口中的方法，从而扩展了程序的功能。这种方式的好处是，您不需要修改现有代码，并且原有代码仍然可以正常使用。</p>
+<p>因此，接口可以使得程序更具灵活性和拓展性，使代码更加简洁和易于维护。</p>
+<p>阅读一下代码</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;math&quot;</span></span><br><span class="line">)</span><br><span class="line"><span class="comment">//接口，包含一个计算面积方法，返回值float64类型</span></span><br><span class="line"><span class="keyword">type</span> Shape <span class="keyword">interface</span> &#123;</span><br><span class="line">	Area() <span class="type">float64</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//长方形</span></span><br><span class="line"><span class="keyword">type</span> Rectangle <span class="keyword">struct</span> &#123;</span><br><span class="line">	width <span class="type">float64</span></span><br><span class="line">	height <span class="type">float64</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//计算长方行的面积方法</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(r Rectangle)</span></span> Area() <span class="type">float64</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> r.height * r.width</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//圆</span></span><br><span class="line"><span class="keyword">type</span> Circle <span class="keyword">struct</span> &#123;</span><br><span class="line">	radius <span class="type">float64</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//计算圆面积方法</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c Circle)</span></span> Area() <span class="type">float64</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> math.Pi * c.radius * c.radius</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//此方法打印面积</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">PrintArea</span><span class="params">(s Shape)</span></span>&#123;</span><br><span class="line">	fmt.Println(s.Area())</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	r := Rectangle&#123;width: <span class="number">10</span>, height: <span class="number">20</span>&#125;</span><br><span class="line"></span><br><span class="line">	c := Circle&#123;radius: <span class="number">2</span>&#125;</span><br><span class="line"><span class="comment">//不同图形用相同方法</span></span><br><span class="line">	PrintArea(r)</span><br><span class="line"></span><br><span class="line">	PrintArea(c)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这段代码中定义了两个类：长方形和圆，并且分别计算这两种图形型的面积</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://q7df1.github.io/2023/01/15/%E6%90%AD%E5%BB%BAcs%E8%B5%B7%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -176,7 +242,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-01-15 00:13:59 / Modified: 21:03:15" itemprop="dateCreated datePublished" datetime="2023-01-15T00:13:59+08:00">2023-01-15</time>
+              <time title="Created: 2023-01-15 00:13:59 / Modified: 21:05:40" itemprop="dateCreated datePublished" datetime="2023-01-15T00:13:59+08:00">2023-01-15</time>
             </span>
 
           
@@ -431,12 +497,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
