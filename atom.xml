@@ -6,7 +6,7 @@
   <link href="https://q7df1.github.io/atom.xml" rel="self"/>
   
   <link href="https://q7df1.github.io/"/>
-  <updated>2023-02-06T07:19:18.576Z</updated>
+  <updated>2023-02-13T12:44:11.220Z</updated>
   <id>https://q7df1.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>国内注册chatGPT</title>
+    <link href="https://q7df1.github.io/2023/02/13/%E5%9B%BD%E5%86%85%E6%B3%A8%E5%86%8CchatGPT/"/>
+    <id>https://q7df1.github.io/2023/02/13/%E5%9B%BD%E5%86%85%E6%B3%A8%E5%86%8CchatGPT/</id>
+    <published>2023-02-13T11:29:54.000Z</published>
+    <updated>2023-02-13T12:44:11.220Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="国内注册GPT基本步骤扫盲"><a href="#国内注册GPT基本步骤扫盲" class="headerlink" title="国内注册GPT基本步骤扫盲"></a>国内注册GPT基本步骤扫盲</h1><p><strong><em>简要步骤及条件</em></strong></p><ol>    <li>国外IP(博主选择的USA)</li>    <li>邮箱(不受限制)</li>    <li>国外电话号码(靠接码平台)</li></ol><p><strong><em>如果你1和3步没有的话预计要花费20RMB！！！</em></strong></p><h2 id="代理IP"><a href="#代理IP" class="headerlink" title="代理IP"></a>代理IP</h2><p>这里不赘述如何获取国外IP，你可以理解为翻墙，挂梯子，代理上网，科学上网，最好是原生国外ip这里博主使用的USA的ip，注册账号没有压力，我不会推荐你去购买代理ip也不会提供任何有关代理ip的信息，这一切都得由你自己钻研，加油！！！提供一个网站，如果你开启了代理ip的话这里可以显示你的代理位置 <a href="https://whoer.net/zh" title="注意如果没有代理ip的话无法访问">whoer</a>.</p><p>此外，不单单注册需要代理ip，正常使用也需要，故不是真正觉得需要，或者已经具备条件，没必要尝试（劝退）</p><p><img src="/../image/whoer.jpg" alt="网站首页" title="San Juan Mountains"></p><h2 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h2><p>邮箱的话没有什么特别的要求国内的QQ和163都可以用，博主用的outlook邮箱，但个人认为这个邮箱不太好(很多时候收不到邮件，或者很慢)，有gmail或者其他正常邮箱都可以使用</p><h2 id="国外电话验证"><a href="#国外电话验证" class="headerlink" title="国外电话验证"></a>国外电话验证</h2><p>此步骤需要验证国外电话号码，值得注意的是包括中国本土号码还有好几个国家也是没有chatGPT服务的，但是不用担心，一般找个靠谱的国外接码平台（这类平台提供各种注册账号需要的各国电话号码，利用好他们可以突破各种限制注册很多不在本土服务的账号）即可，这里不推荐任何接码平台，需要的可自行搜索寻找，你可以利用你的国外ip代理访问<em>Google</em>搜索，找个价格能接受,靠谱的网站，一般是通过充值一定金额，博主用过两个。一个支付宝充值了5美刀也就是人民币35元左右，但只用了1美刀的样子，剩下的金额就在账户里下次备用。另一个一次充值只需要一美刀，基本上也用完了</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="进入网站注册"><a href="#进入网站注册" class="headerlink" title="进入网站注册"></a>进入网站注册</h3><p><a href="https://chat.openai.com/">ChatGPT</a></p><p><img src="/../image/register.jpg" alt="注册"></p><p>选择 Sign up</p><h3 id="输入邮箱简单填好身份信息"><a href="#输入邮箱简单填好身份信息" class="headerlink" title="输入邮箱简单填好身份信息"></a>输入邮箱简单填好身份信息</h3><p>此过程很简单按流程来即可</p><h3 id="手机验证"><a href="#手机验证" class="headerlink" title="手机验证"></a>手机验证</h3><p>这里需要用到接码平台，前面我已经讲清楚了，原理也很简单，看你自己能否找到并利用</p><p><img src="/../image/phone.jpg" alt="手机"></p><h3 id="成功！！！"><a href="#成功！！！" class="headerlink" title="成功！！！"></a>成功！！！</h3><p><img src="/../image/ses.jpg" alt="成功"></p><p>祝你好运！！！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;国内注册GPT基本步骤扫盲&quot;&gt;&lt;a href=&quot;#国内注册GPT基本步骤扫盲&quot; class=&quot;headerlink&quot; title=&quot;国内注册GPT基本步骤扫盲&quot;&gt;&lt;/a&gt;国内注册GPT基本步骤扫盲&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;简要步骤及条件&lt;/em&gt;&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="AI" scheme="https://q7df1.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>接口实现多态</title>
