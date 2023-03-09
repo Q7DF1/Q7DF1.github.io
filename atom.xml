@@ -6,7 +6,7 @@
   <link href="https://q7df1.github.io/atom.xml" rel="self"/>
   
   <link href="https://q7df1.github.io/"/>
-  <updated>2023-03-08T17:21:55.783Z</updated>
+  <updated>2023-03-09T12:40:52.440Z</updated>
   <id>https://q7df1.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>音频转文字-openAI-Audio</title>
+    <link href="https://q7df1.github.io/2023/03/09/%E9%9F%B3%E9%A2%91%E8%BD%AC%E6%96%87%E5%AD%97-openAI-Audio/"/>
+    <id>https://q7df1.github.io/2023/03/09/%E9%9F%B3%E9%A2%91%E8%BD%AC%E6%96%87%E5%AD%97-openAI-Audio/</id>
+    <published>2023-03-09T12:19:45.000Z</published>
+    <updated>2023-03-09T12:40:52.440Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="音频转文字"><a href="#音频转文字" class="headerlink" title="音频转文字"></a>音频转文字</h1><p>书接上回，AI图片生成，问答生成，接下来博主继续介绍 openAI的音频转换API，实现音频提取并翻译(-&gt;English)文字</p><h2 id="1、-准备环境"><a href="#1、-准备环境" class="headerlink" title="1、 准备环境"></a>1、 准备环境</h2><div><ul>    1、python基本环境 </ul><ul>    2、pip install openai(下载第三方库,改库来自openAI官方)</ul><ul>    3、拥有openAI账号(chatGPT账号，没有可以注册一个)    </ul><ul>    4、具有代理上网能力(全局),或者挂在境外服务器上运行    </ul></div><h2 id="2、实践"><a href="#2、实践" class="headerlink" title="2、实践"></a>2、实践</h2><p>首先进入openAI_API的官网获取API_Key—&gt;<a href="https://platform.openai.com/overview">openAI</a></p><p>进入View API keys</p><p><img src="/../image/person.png"></p><p>点击创建Create new secret key</p><p><img src="/../image/api_Key.png"></p><p>并复制所创建的API_Key备用</p><p>博主依旧是润色官网代码实现功能：</p><ul>1、提取文字(不翻译)</ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Note: you need to be using OpenAI Python v0.27.0 for the code below to work</span></span><br><span class="line"><span class="keyword">import</span> openai</span><br><span class="line"></span><br><span class="line">openai.api_key = <span class="string">&quot;your API_Key&quot;</span></span><br><span class="line">audio_file= <span class="built_in">open</span>(<span class="string">&quot;./demo2.mp3&quot;</span>, <span class="string">&quot;rb&quot;</span>) <span class="comment">#路径修改为你的音频文件路径</span></span><br><span class="line"><span class="comment"># 音频转化为文字</span></span><br><span class="line">response = openai.Audio.transcribe(<span class="string">&quot;whisper-1&quot;</span>, audio_file)</span><br><span class="line"><span class="built_in">print</span>(response[<span class="string">&#x27;text&#x27;</span>])</span><br></pre></td></tr></table></figure><ul>2、提取文字并翻译为英文</ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Note: you need to be using OpenAI Python v0.27.0 for the code below to work</span></span><br><span class="line"><span class="keyword">import</span> openai</span><br><span class="line"></span><br><span class="line">openai.api_key = <span class="string">&quot;your API_Key&quot;</span></span><br><span class="line">audio_file= <span class="built_in">open</span>(<span class="string">&quot;./demo2.mp3&quot;</span>, <span class="string">&quot;rb&quot;</span>) <span class="comment">#路径修改为你的音频文件路径</span></span><br><span class="line"><span class="comment"># 音频转化为文字并翻译为英文</span></span><br><span class="line">response = openai.Audio.translate(<span class="string">&quot;whisper-1&quot;</span>,audio_file)</span><br><span class="line"><span class="built_in">print</span>(response[<span class="string">&#x27;text&#x27;</span>])</span><br></pre></td></tr></table></figure><h2 id="3、运行截图"><a href="#3、运行截图" class="headerlink" title="3、运行截图"></a>3、运行截图</h2><p><img src="/../image/audio_text.png"></p><h2 id="4、总结"><a href="#4、总结" class="headerlink" title="4、总结"></a>4、总结</h2><p>相比于图形生成其效果还可以，也许适用于做短视频的字幕生成。</p><p>大家对AI感兴趣的可以阅读官方文档—&gt;<a href="https://platform.openai.com/docs/introduction">openAI_Doc</a></p><p>值得注意的是使用API并不是免费的，每分钟的音频计费$0.006，但每个账户都有$18的额度</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;音频转文字&quot;&gt;&lt;a href=&quot;#音频转文字&quot; class=&quot;headerlink&quot; title=&quot;音频转文字&quot;&gt;&lt;/a&gt;音频转文字&lt;/h1&gt;&lt;p&gt;书接上回，AI图片生成，问答生成，接下来博主继续介绍 openAI的音频转换API，实现音频提取并翻译(-&amp;gt;E</summary>
+      
+    
+    
+    
+    
+    <category term="AI" scheme="https://q7df1.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>调用openAI API 实现AI画图</title>
